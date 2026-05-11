@@ -1,0 +1,12 @@
+using UnityEngine;
+
+public class Interactable : MonoBehaviour
+{
+    [TextArea(3, 5)]
+    public string clueText = "This is a clue...";
+
+    public string GetClue()
+    {
+        return clueText;
+    }
+}
