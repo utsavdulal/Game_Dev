@@ -4,6 +4,9 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
 
+    public PlayerInteraction playerInteraction;
+
+
     public GameObject investigationPanel;
 
     public static GameManager Instance;
@@ -13,6 +16,11 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI evidenceText;
 
+    public GameObject endingBackground;
+
+    public GameObject interactPrompt;
+    public GameObject cluePanel;
+    
     void Awake()
     {
         Instance = this;
@@ -32,7 +40,16 @@ public class GameManager : MonoBehaviour
         if(foundEvidence >= totalEvidence)
         
         {
+
+            endingBackground.SetActive(true);
+
             investigationPanel.SetActive(true);
+
+            playerInteraction.enabled = false;
+
+            interactPrompt.SetActive(false);
+            cluePanel.SetActive(false);
+
 
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
