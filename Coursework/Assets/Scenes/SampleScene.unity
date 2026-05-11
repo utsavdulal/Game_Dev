@@ -607,9 +607,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b36c4ff52e3951478d4a9919e53092a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactDistance: 3
-  cluePanel: {fileID: 0}
-  clueText: {fileID: 0}
 --- !u!1001 &60895812
 PrefabInstance:
   m_ObjectHideFlags: 0
