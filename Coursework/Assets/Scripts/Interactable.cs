@@ -9,4 +9,16 @@ public class Interactable : MonoBehaviour
     {
         return clueText;
     }
+    private bool found = false;
+
+
+public void FoundEvidence()
+{
+    if(found) return;
+
+    found = true;
+
+    GameManager.Instance.AddEvidence();
+}
+
 }
