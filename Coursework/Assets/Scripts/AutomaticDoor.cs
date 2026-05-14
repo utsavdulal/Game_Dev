@@ -17,7 +17,7 @@ public class AutomaticDoor : MonoBehaviour
             doorTransform = transform;
 
         closedRotation = doorTransform.localRotation;
-        openRotation = closedRotation * Quaternion.Euler(0f, openAngle, 0f);
+        openRotation = closedRotation * Quaternion.Euler(openAngle, 0f, 0f);
     }
 
     void Update()
