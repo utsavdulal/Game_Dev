@@ -11,7 +11,7 @@ public class IntroTyping : MonoBehaviour
     public string fullText;
 
     [Header("Typing Settings")]
-    public float typingSpeed = 0.04f;
+    public float typingSpeed = 0.07f;
 
     [Header("Player")]
     public GameObject player;

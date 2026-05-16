@@ -6,6 +6,7 @@ public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private float interactDistance = 15f;
 
+    public AudioSource inspectSound;
     private Camera m_Camera;
 
     public GameObject cluePanel;
@@ -94,8 +95,11 @@ public class PlayerInteraction : MonoBehaviour
 
                 clueText.text =
                     interactable.GetClue();
+                    
 
                 interactable.FoundEvidence();
+
+                inspectSound.Play();
             }
             else
             {

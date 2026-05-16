@@ -79,6 +79,7 @@ Assets/
   EasyDoor.cs
   FirstPersonCameraController.cs
  Scripts/
+  ButtonSound.cs
   CarAutoDrive.cs
   DoorAutomation.cs
   GameManager.cs
