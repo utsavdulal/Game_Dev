@@ -82,6 +82,7 @@ Assets/
   ButtonSound.cs
   CarAutoDrive.cs
   DoorAutomation.cs
+  ExitGame.cs
   GameManager.cs
   HelicopterController.cs
   Interactable.cs
